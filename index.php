@@ -8,10 +8,16 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-// Calling sendMail Function which is defind below.
+// Calling sendMail Function
+
+
+//sendMail($to, $from , $from , $body); these parameter required
 sendMail('avishukl96@gmail.com','Avanish Shukla','PHPMailer test','PHPMailer Body ');
 
+
+
 // Function
+
 function sendMail($to = 'avishukl96@gmail.com' , $from = 'Avanish Shukla' , $subject = 'default Subject', $body = "default Body"  ){
 	// Create instence of php mailer
 $mail = new PHPMailer();
